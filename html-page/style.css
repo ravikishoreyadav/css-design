@@ -92,7 +92,7 @@ h4.font-weight-bold {
 .banner {
     background-image: url(background-img-banner.jpg);
     background-size: cover;
-    max-width: 2579px;
+    min-width: 100px;
     height: 600px;
     background-position: center;
 }
