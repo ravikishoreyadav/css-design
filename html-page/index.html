@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="icon" type="image/x-icon" href="logof.png">
+    <link rel="icon" type="image/x-icon" href="logof.png">
 
     <link rel="stylesheet" href="style.css">
     <title>Page</title>
@@ -31,7 +31,7 @@
             </div>
         </div>
         <div class="bg-info w-100 pb-5  ">
-            <div class="container d-md-flex justify-content-between align-items-center py-4">
+            <div class="container d-flex justify-content-between align-items-center py-4">
                 <div class="adrs d-flex align-items-center">
                     <i class="bi bi-geo-alt text-white display-6"></i>
                     <div class="adrs-text text-white">
@@ -50,22 +50,30 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
         <div class=" container position-relative ">
-            <div class="bg-white d-flex justify-content-between position-absolute w-100 top-9  " style="z-index: 99; top: -25px;;">
+            <div class="bg-white d-flex justify-content-between position-absolute w-100 top-9  "
+                style="z-index: 99; top: -25px;;">
                 <div class="nav-bars-getquik d-flex">
                     <div class="get-locat d-flex bg-yellow p-2   "><i class="bi bi-arrow-right px-1"></i>
                         <p style="margin-bottom: 0rem;">Get Quik Support </p>
                     </div>
-                    <div class="nav mt-10">
-                        <ul class="d-md-flex nav p-2 mx-3" style="margin: 0 ; list-style: none;">
-                            <li class="mx-2 "><a href="#" class="text-decoration-none text-dark">HOME</a></li>
-                            <li class="mx-2"><a href="#" class="text-decoration-none text-dark">PAGE</a></li>
-                            <li class="mx-2"><a href="#" class="text-decoration-none text-dark">STUDIES</a> </li>
-                            <li class="mx-2"><a href="#" class="text-decoration-none text-dark">BLOGS</a></li>
-                            <li class="mx-2"><a href="#" class="text-decoration-none text-dark ">CONTACT</a></li>
+                    <div class="nav mt-10 main_list" id="mainListDiv">
+                        <ul class="d-md-flex nav p-2 mx-3" style="margin: 0 ; list-style: none; grid-gap: 20px;">
+                            <li><a href="#" class="text-decoration-none text-dark">HOME</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">PAGE</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">STUDIES</a> </li>
+                            <li><a href="#" class="text-decoration-none text-dark">BLOGS</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark ">CONTACT</a></li>
                         </ul>
+                    </div>
+                    <div class="media_button">
+                        <button class="main_media_button" id="mediaButton">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
                     </div>
                 </div>
                 <div class="scl-media d-flex  align-items-center px-2">
@@ -96,18 +104,38 @@
 
     </div>
     <script>
-    var mainListDiv = document.getElementById("mainListDiv"),
-    mediaButton = document.getElementById("mediaButton");
+        	(function($) { 
+  $(function() { 
 
-mediaButton.onclick = function () {
-    
-    "use strict";
-    
-    mainListDiv.classList.toggle("show_list");
-    mediaButton.classList.toggle("active");
-    
-};
-</script>
+    //  open and close nav 
+    $('#navbar-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+
+
+    // Hamburger toggle
+    $('#navbar-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+
+
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.navbar-dropdown').slideToggle("slow");
+
+      // Close dropdown when select another dropdown
+      $('.navbar-dropdown').not($(this).siblings()).hide("slow");
+      e.stopPropagation();
+    });
+
+
+    // Click outside the dropdown will remove the dropdown class
+    $('html').click(function() {
+      $('.navbar-dropdown').hide();
+    });
+  }); 
+})(jQuery); 
+    </script>
 </body>
 
 </html>
