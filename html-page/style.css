@@ -93,7 +93,7 @@ h4.font-weight-bold {
     background-image: url(background-img-banner.jpg);
     background-size: cover;
     min-width: 100px;
-    height: 600px;
+    height: 506px;
     background-position: center;
 }
 .banner:after {
@@ -131,81 +131,33 @@ span#add-number {
     clip-path: circle(40%);
     padding: 7px;
 }
+.banner-text {
+    font-family: 'latobold';
+    color: white;
+    padding: 50px 0 0 0;
+  
+
+}
 .banner-text h6 {
     color: yellow;
+    font-weight: bold;
 }
-.banner-text{
-    font-family: 'latobold';
-}
+.banner-text h1{
+    font-weight: 900;
 
-   div.media_button {
-    width: 40px;
-    height: 40px;
-    background-color: transparent;
+}
+.hamburger {
     display: none;
+    
 }
- div.media_button button.main_media_button {
-    width: 100%;
-    height: 100%;
-    background-color: transparent;;
-    outline: 0;
-    border: none;
-    cursor: pointer;
-}
- div.media_button button.main_media_button span{
-    width: 98%;
-    height: 1px;
-    display: block;
-    background-color: black;
-    margin-top: 9px;
-    margin-bottom: 10px;
-}
- div.media_button button.main_media_button:hover span:nth-of-type(1){
-    transform: rotateY(180deg);
-    transition: all 0.5s;
-    background-color: black;
-}
-
-div.media_button button.main_media_button:hover span:nth-of-type(2){
-    transform: rotateY(180deg);
-    transition: all 0.4s;
-    background-color: black;
-}
-
-div.media_button button.main_media_button:hover span:nth-of-type(3){
-    transform: rotateY(180deg);
-    transition: all 0.3s;
-    background-color: black;
-}
-
- div.media_button button.active span:nth-of-type(1) {
-    transform: rotate3d(0, 0, 1, 45deg);
-    position: absolute;
-    margin: 0;
-}
-
- div.media_button button.active span:nth-of-type(2) {
-    display: none;
-}
-
- div.media_button button.active span:nth-of-type(3) {
-    transform: rotate3d(0, 0, 1, -45deg);
-    position: absolute;
-    margin: 0;
-}
-
- div.media_button button.active:hover span:nth-of-type(1) {
-    transform: rotate3d(0, 0, 1, 20deg);
-}
-
- div.media_button button.active:hover span:nth-of-type(3) {
-    transform: rotate3d(0, 0, 1, -20deg);
-}
+ 
 @media only screen and (max-width: 676px) {
-    .nav {
+    .nav ul{
        display: none;
      }
-      div.media_button{
+     .hamburger {
          display: block;
+         font-size: 25px;
      }
    }
+   

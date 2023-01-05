@@ -60,6 +60,7 @@
                         <p style="margin-bottom: 0rem;">Get Quik Support </p>
                     </div>
                     <div class="nav mt-10 main_list" id="mainListDiv">
+                        
                         <ul class="d-md-flex nav p-2 mx-3" style="margin: 0 ; list-style: none; grid-gap: 20px;">
                             <li><a href="#" class="text-decoration-none text-dark">HOME</a></li>
                             <li><a href="#" class="text-decoration-none text-dark">PAGE</a></li>
@@ -68,12 +69,8 @@
                             <li><a href="#" class="text-decoration-none text-dark ">CONTACT</a></li>
                         </ul>
                     </div>
-                    <div class="media_button">
-                        <button class="main_media_button" id="mediaButton">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
+                    <div class="hamburger">
+                        <i class="bi bi-justify"></i>
                     </div>
                 </div>
                 <div class="scl-media d-flex  align-items-center px-2">
@@ -104,37 +101,20 @@
 
     </div>
     <script>
-        	(function($) { 
-  $(function() { 
+        	const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav");
+const links = document.querySelectorAll(".nav-links li");
 
-    //  open and close nav 
-    $('#navbar-toggle').click(function() {
-      $('nav ul').slideToggle();
+hamburger.addEventListener('click', ()=>{
+   //Animate Links
+    navLinks.classList.toggle("open");
+    links.forEach(link => {
+        link.classList.toggle("fade");
     });
 
-
-    // Hamburger toggle
-    $('#navbar-toggle').on('click', function() {
-      this.classList.toggle('active');
-    });
-
-
-    // If a link has a dropdown, add sub menu toggle.
-    $('nav ul li a:not(:only-child)').click(function(e) {
-      $(this).siblings('.navbar-dropdown').slideToggle("slow");
-
-      // Close dropdown when select another dropdown
-      $('.navbar-dropdown').not($(this).siblings()).hide("slow");
-      e.stopPropagation();
-    });
-
-
-    // Click outside the dropdown will remove the dropdown class
-    $('html').click(function() {
-      $('.navbar-dropdown').hide();
-    });
-  }); 
-})(jQuery); 
+    //Hamburger Animation
+    hamburger.classList.toggle("toggle");
+});
     </script>
 </body>
 
