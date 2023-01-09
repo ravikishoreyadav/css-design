@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+header {
+    background-color: #180e54;
+}
+.header-logo img {
+    max-width: 134px;
+    position: relative;
+    top: 40px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+.nav {
+    display: flex;
+    gap: 63px;
+    text-align: center;
+    padding-right: 30px;
+    align-items: center;
+}
+.nav>div{
+    cursor: pointer;
+}
+.nav p {
+    color: white;
+}
+.nav i {
+    color: #07f4ff;
+    font-size: 25px;
+}
+.sign {
+    background-color: #0bc1dd;
+    padding: 30px 20px 30px 20px;
+}
