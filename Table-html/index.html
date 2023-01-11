@@ -58,17 +58,142 @@
                     <input type="search" placeholder="Select Location">
                     <button type="submit" class="geo">Search</button>
                 </div>
-                <button class="btn-srch">Search</button>
+                <button class="btn-srch" id="serch-icon">Search</button>
             </form>
             <p>Check out what Taira whiti Gisborne has to offer</p>
         </div>
     </div>
-    <div class="section">
-        <div class="featured-business">
-        </div>
-        <div class="abut-us">
+    <div class="tab">
+        <button class="tablinks"  onclick="openCity(event, 'feater')" id="defaultOpen">FEATURED BUSINESS</button>
+        <button class="tablinks" id="about" onclick="openCity(event, 'abt-us')">ABOUT-US</button>
+
+    </div>
+
+    <div id="feater" class="tabcontent">
+        <h5>Let'uncover the best places</h5>
+        <div class="heading-banner">
+            <div class="tex-content">
+                <h2>Discover the best places to stay,eat,shop&visit the city nearest to you</h2>
+                <p> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book</p>
+                <div class="choose-category">
+                    <div class="menu-img">
+                        <img src="menu.png" alt="">
+                    </div>
+                    <div class="text-cetegory">
+                        <h1>Choose a Category</h1>
+                        <p>It is a long established fact that a reader will be distracted by the It is a long
+                            established fact that a reader will be distracted by the</p>
+                    </div>
+                </div>
+                <div class="choose-category">
+                    <div class="menu-img">
+                        <img src="find.png" alt="">
+                    </div>
+                    <div class="text-cetegory">
+                        <h1>Find What you Want</h1>
+                        <p>It is a long established fact that a reader will be distracted by the It is a long
+                            established fact that a reader will be distracted by the</p>
+                    </div>
+                </div>
+                <div class="choose-category">
+                    <div class="menu-img">
+                        <img src="hand-shake.png" alt="">
+                    </div>
+                    <div class="text-cetegory">
+                        <h1>Trusted locals</h1>
+                        <p>It is a long established fact that a reader will be distracted by the It is a long
+                            established fact that a reader will be distracted by the</p>
+                    </div>
+                </div>
+            </div>
+            <div class="img-content">
+                <div class="grid-container">
+                    <div class="grid-item"><img src="pexels-photo.png.jpeg" alt=""></div>
+                    <div class="grid-item"><img src="pexels-photo.png.jpeg" alt=""></div>
+                    <div class="grid-item"><img src="pexels-photo.png.jpeg" alt=""></div>
+                    <div class="grid-item"><img src="pexels-photo.png.jpeg" alt=""></div>
+                    <button class="btn-lst-explor">Explore Listing</button>
+                </div>
+               
+
+            </div>
         </div>
     </div>
+
+    <div id="abt-us" class="tabcontent">
+        <h2 style="text-align:center; padding: 25px;">Our Team</h2>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="man.png" alt="Jane" style="width:100%">
+                    <div class="container">
+                        <h2>Jane Doe</h2>
+                        <p class="title">CEO & Founder</p>
+                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                        <p>jane@example.com</p>
+                        <p><button class="button">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="man.png" alt="Mike" style="width:100%">
+                    <div class="container">
+                        <h2>Mike Ross</h2>
+                        <p class="title">Art Director</p>
+                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                        <p>mike@example.com</p>
+                        <p><button class="button">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="man.png" alt="John" style="width:100%">
+                    <div class="container">
+                        <h2>John Doe</h2>
+                        <p class="title">Designer</p>
+                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                        <p>john@example.com</p>
+                        <p><button class="button">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="img-contenter">
+        <div class="img-1"><img src="boy-fr.jpg" alt=""></div>
+        <div class="img-1"><img src="fruit.jfif" alt=""></div>
+        <div class="img-1"><img src="adorabl.webp" alt=""></div>
+        <div class="img-1"><img src="Rainbow-Fruit.jpg" alt=""></div>
+        <div class="img-1"><img src="2.-SarongBikini-Cover-Up.jpg.crdownload" alt=""></div>        
+    </div>
+
+<footer>
+    
+</footer>
+<script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click("abt-us");
+    </script>
 </body>
 
 </html>
