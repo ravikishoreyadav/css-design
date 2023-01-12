@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css"
+        integrity="sha512-72McA95q/YhjwmWFMGe8RI3aZIMCTJWPBbV8iQY3jy1z9+bi6+jHnERuNrDPo/WGYEzzNs4WdHNyyEr/yXJ9pA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/x-icon" href="favicon.png">
 
     <link rel="stylesheet" href="style.css">
@@ -64,7 +67,7 @@
         </div>
     </div>
     <div class="tab">
-        <button class="tablinks"  onclick="openCity(event, 'feater')" id="defaultOpen">FEATURED BUSINESS</button>
+        <button class="tablinks" onclick="openCity(event, 'feater')" id="defaultOpen">FEATURED BUSINESS</button>
         <button class="tablinks" id="about" onclick="openCity(event, 'abt-us')">ABOUT-US</button>
 
     </div>
@@ -116,7 +119,7 @@
                     <div class="grid-item"><img src="pexels-photo.png.jpeg" alt=""></div>
                     <button class="btn-lst-explor">Explore Listing</button>
                 </div>
-               
+
 
             </div>
         </div>
@@ -170,29 +173,64 @@
         <div class="img-1"><img src="fruit.jfif" alt=""></div>
         <div class="img-1"><img src="adorabl.webp" alt=""></div>
         <div class="img-1"><img src="Rainbow-Fruit.jpg" alt=""></div>
-        <div class="img-1"><img src="2.-SarongBikini-Cover-Up.jpg.crdownload" alt=""></div>        
+        <div class="img-1"><img src="BEACHE-GIRL.jpg" alt=""></div>
     </div>
 
-<footer>
-    
-</footer>
-<script>
-    function openCity(evt, cityName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.className += " active";
-    }
-    
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click("abt-us");
+    <footer>
+        <div class="footer-contner">
+            <div class=" site-logo social-media-links box-footer">
+                <img src="logo.png">
+                <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                <div class="social-media">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="navigate footer-links box-footer">
+                <h2>NAVIAGTE</h2>
+                <a href="#">About</a>
+                <a href="#">Read our blog</a>
+                <a href="#">featured business</a>
+                <a href="#">join us</a>
+            </div>
+            <div class="usefull-links footer-links box-footer">
+                <h2>USEFULL LINKS</h2>
+                <a href="#">manage A listing</a>
+                <a href="#">plan & share local events</a>
+                <a href="#">contect us </a>
+                <a href="#">privacy policy</a>
+            </div>
+            <div class="subcribe-mail footer-links box-footer">
+                <h2>SUBSCRIBE FOR MORE UPDATES</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet efficitur quam, in
+                    fermentum.</p>
+                    <form action="php" id="yemai" class="subcribe-mail">
+                        <input type="email" id="mail">
+                        <input type="submit" value="subscribe">
+                    </form>
+            </div>
+
+        </div>
+    </footer>
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click("abt-us");
     </script>
 </body>
 
