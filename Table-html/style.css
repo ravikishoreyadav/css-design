@@ -383,3 +383,18 @@ footer{
 font-size: 20px;
 padding-bottom: 10px;
 }
+.social-media i {
+  border: 1px solid white;
+  padding: 18px 18px 18px 18px;
+  border-radius: 110%;
+  font-size: 20px;
+  transition: 0.5s;
+}
+.social-media i:hover {
+  border: 1px solid white;
+  padding: 18px 18px 18px 18px;
+  border-radius: 110%;
+  font-size: 20px;
+  color: #180e54;
+  background-color: white;
+}
