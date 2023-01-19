@@ -109,7 +109,7 @@ button.btn-srch:hover {
 form {
     padding: 2px;
     display: flex;
-    gap: 5px;
+    
   }
   
   input[type="search"] {
@@ -206,7 +206,7 @@ form {
     border: none;
     transition: 0.5s;
     font-size: x-large;
-
+    cursor: default;
   }
   button#defaultOpen.active {
     background-color: white;
@@ -214,6 +214,7 @@ form {
     border: none;
     transition: 0.5s;
     font-size: x-large;
+    cursor: default;
   }
   
   /* Style the tab content */
@@ -361,7 +362,7 @@ footer{
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 50px;
-  color: white;
+  color: rgb(215, 207, 207);
 }
 
 .footer-contner {
@@ -370,7 +371,7 @@ footer{
 }
 
 .footer-links a {
-  color: white;
+  color: rgb(219, 208, 208);
   display: block;
   text-decoration: none;
   padding-top: 5px;
@@ -378,23 +379,39 @@ footer{
 .box-footer {
   width: 25%;
   background-color: #180e54;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  word-spacing: 3px;
+  line-height: 1.5;
 }
 .footer-links h2{
 font-size: 20px;
 padding-bottom: 10px;
+color: white;
 }
 .social-media i {
   border: 1px solid white;
-  padding: 18px 18px 18px 18px;
+  padding: 7px 10px 7px 10px;
   border-radius: 110%;
   font-size: 20px;
   transition: 0.5s;
 }
 .social-media i:hover {
   border: 1px solid white;
-  padding: 18px 18px 18px 18px;
+  padding: 7px 10px 7px 10px;
   border-radius: 110%;
   font-size: 20px;
   color: #180e54;
   background-color: white;
+}
+input#mail {
+  width: 230px;
+  height: 42px;
+}
+input[type="submit"] {
+  background: #09d0c4;
+  height: 42px;
+  border-color: #09d0c4;
 }
