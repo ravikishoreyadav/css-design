@@ -414,4 +414,6 @@ input[type="submit"] {
   background: #09d0c4;
   height: 42px;
   border-color: #09d0c4;
+  padding: 10px;
+  font-size: 18px;
 }
