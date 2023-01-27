@@ -22,7 +22,7 @@ header {
 .nav {
     display: flex;
     text-align: center;
-    padding-right: 30px;
+    padding-right: 31px;
     align-items: center;
 }
 .nav>div{
