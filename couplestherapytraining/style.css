@@ -1,0 +1,121 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #FFFBBA;
+    position: sticky;
+    top: 0;
+    display: none;
+}
+.nav-text {
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+    padding: 15px;
+}
+
+div#countdown ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding-bottom: 40px;
+    text-align: center;
+    margin: 0;
+}
+span.timer {
+    display: block;
+    font-size: 55px;
+    font-weight: 500;
+}
+.banner {
+    background-image: url("/img/4450-Copy-1.jpg");
+    color: white;
+    text-align: center;
+}
+.banner-text {
+    padding: 58px 0px 40px;
+}
+.banner-text h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+}
+.banner-text h5 {
+    padding-top: 20px;
+    font-weight: 700;
+    font-size: 19px;
+    font-style: italic;
+}
+.banner-vedio {
+    padding-bottom: 30px;
+}
+.banner-vedio iframe {
+    display: block;
+    margin: auto;
+}
+.banner-vedio h2 {
+    padding: 20px;
+    font-weight: 700;
+    font-size: xx-large;
+}
+.banner-vedio button {
+    background: #A0CE4E;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    line-height: 21px;
+    font-size: 18px;
+    border-radius: 3px;
+    border: none;
+}
+.banner-vedio  button:hover {
+    background: #64842e;
+    color: white;
+    
+}
+.text-row {
+    padding: 30px 60px 30px 60px;
+}
+.pera-text p{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.banner2{
+    background-image: url(/img/young-couple-having-marriage-counselling-5CLF6KY-Copy-2.jpg);
+
+}
+.banner2-text {
+    background: white;
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 30px;
+}
+
+.banner2-text h3 {
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 40px;
+}
+.banner2-text button {
+    background: #A0CE4E;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    line-height: 20px;
+    font-size: 18px;
+    border-radius: 3px;
+    border: none;
+    margin: auto;
+    display: block;
+}
+.banner2-text-next-heading {
+    padding: 20px 0px 15px 0px;
+}
+.banner2-text ul li {
+    padding-top: 6px;
+}
