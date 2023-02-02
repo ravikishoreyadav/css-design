@@ -8,8 +8,10 @@ header {
     background: #FFFBBA;
     position: sticky;
     top: 0;
-    display: none;
+    
 }
+
+
 .nav-text {
     font-size: 35px;
     font-weight: 400;
@@ -32,7 +34,7 @@ span.timer {
     font-weight: 500;
 }
 .banner {
-    background-image: url("/img/4450-Copy-1.jpg");
+    background-image: url("img/4450-Copy-1.jpg");
     color: white;
     text-align: center;
 }
@@ -55,6 +57,7 @@ span.timer {
 }
 .banner-vedio iframe {
     display: block;
+    width: 383px;
     margin: auto;
 }
 .banner-vedio h2 {
@@ -78,15 +81,17 @@ span.timer {
     
 }
 .text-row {
-    padding: 30px 60px 30px 60px;
+    padding: 30px 40px 30px 40px;
 }
 .pera-text p{
     margin-top: 0;
     margin-bottom: 20px;
 }
-.banner2{
-    background-image: url(/img/young-couple-having-marriage-counselling-5CLF6KY-Copy-2.jpg);
-
+.banner2 {
+    background-image: url(./img/young-couple.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;padding: 30px 0;
 }
 .banner2-text {
     background: white;
@@ -113,9 +118,159 @@ span.timer {
     margin: auto;
     display: block;
 }
+.banner2-text button {
+    background: #64842e;;
+}
 .banner2-text-next-heading {
     padding: 20px 0px 15px 0px;
 }
 .banner2-text ul li {
     padding-top: 6px;
+}
+span#days:after {
+    content: ':';
+    left: 12px;
+    position: relative;
+    bottom: 5px;
+}
+span#hours:after {
+    content: ':';
+    left: 12px;
+    position: relative;
+    bottom: 5px;
+}
+span#minutes:after {
+    content: ':';
+    left: 12px;
+    position: relative;
+    bottom: 5px;
+}
+.curriculum-instructors {
+    background: #F6FBFC;
+}
+.curriculum-instructors h2 {
+    font-size: 28px;
+    font-weight: 700;padding: 35px 0;
+}
+.profile-sec, .faq-text {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+.profile-main {
+    padding: 40px 0 20px;
+}
+.profile-sec h4 {
+    padding-bottom: 40px;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 700;
+}
+.profile-sec:before {
+    content: '';
+    border-bottom: 1px solid #0074FF;
+    display: block;
+    width: 170px;
+    margin: 0 auto;
+   
+}
+.recoding-btn {
+    text-decoration: none;
+    background-color: #A0CE4E;
+    color: #FFF;
+    padding: 6px 20px;
+    border-radius: 3px;
+}
+.recoding-btn span {
+    font-size: 14px;
+    font-weight: 600;
+}
+.conflict-para{margin-bottom:5px;}
+
+.main-faq h2, .bonus-added-text h2, .limited-opportunity h2 {
+    font-size: 28px;
+    font-weight: 700;
+    padding: 30px 0;
+}
+.faq-text h3, .bonus-high h3 {
+    font-size: 22px;
+    font-weight: 700;
+}
+.bonus-high h3{line-height:40px;}
+.bonus-added {
+    background-image: url(./img/4450-Copy-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;padding: 30px 0;
+}
+.bonus-added-text {
+    background: white;
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 30px;
+}
+
+.bonus-added-both {
+    padding-top: 20px;
+}
+.bonus-high p{font-weight:700;}
+.border-line:after {
+    content: '';
+    border-bottom: 1px solid #0074FF;
+    display: block;
+    width: 170px;
+    margin: 0 auto;padding: 0 0 30px;
+}
+.padd-top {
+    padding-top: 40px;
+}
+.enroll-btn {
+    padding: 20px 0;
+}
+.enroll-text {
+    padding: 16px 40px;
+    line-height: 21px;
+    font-size: 18px;
+    background: #a0ce4e;
+    border-radius: 3px;
+    font-weight: 700;
+    color: #FFF;
+}
+.enroll-text:hover{background:#80b243;}
+.enroll-text  i.fa.fa-angle-right {
+    font-weight: 700;
+    margin-right: 10px;
+}
+.guaranteed-sec {
+    margin: 95px 0 0 0;
+}
+.guaranteed-text {
+    padding-top: 30px;
+}
+
+footer {
+    background: #282A2B;
+}
+.fooetr-about {
+    padding-top: 15px;
+}
+.copy-right p{
+color: #FFF;}
+.fooetr-about p{
+color: #b6b6b6;}
+
+.copy-right p, .fooetr-about p {
+    font-size: 12px;
+    margin-bottom: 0;
+    letter-spacing: 1.5px;
+}
+.footer-str {
+    padding: 20px 0 0;
+}
+.facebook-icon {
+    padding: 20px 0 0;
+}
+.facebook-icon svg {
+    color: #FFF;
 }
