@@ -341,6 +341,9 @@ form {
   cursor: pointer;
   width: 100%;
   transition: 0.5s;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 
 .button:hover {
@@ -386,10 +389,10 @@ footer{
   word-spacing: 3px;
   line-height: 1.5;
 }
-.footer-links h2{
-font-size: 20px;
-padding-bottom: 10px;
-color: rgb(219, 35, 35);
+.footer-links h2 {
+  font-size: 20px;
+  padding-bottom: 10px;
+  color: #00f8f8;
 }
 .social-media i {
   border: 1px solid white;
